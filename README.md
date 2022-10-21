@@ -1,1 +1,1 @@
-# darkmode-extension
+# Dark Mode Extension
