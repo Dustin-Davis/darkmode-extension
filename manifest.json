@@ -3,15 +3,29 @@
   "name": "Dark Mode",
   "version": "1.0.0",
 
-  "content_scripts" : [
+  "content_scripts": [
     {
-      "matches" : ["<all_urls>"],
-      "js" : ["content.js"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "popup.js"
+      ]
     }
-    ],
+  ],
 
   "action": {
         "default_title": "Invert.io",
         "default_popup": "popup.html"
-    }
+    },
+
+    "host_permissions": [
+      "<all_urls>"
+    ],
+
+    "permissions": [
+      "scripting",
+      "tabs"
+    ]
+
 }
